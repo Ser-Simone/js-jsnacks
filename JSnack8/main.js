@@ -3,17 +3,14 @@ numeri definito da voi nel codice, ne calcoli la loro somma e la restituisca
 come risultato.
 Utilizzare la funzione sommaNumeri per stampare il risultato ottenuto*/
 
-let Numero = ["5" , "10", "58", "34", "37", "92", "69", "90", "28", "2"];
-
+const Numero = [5,5,5,5,6,5,5,5,5,5];
+sommaNumeri(Numero);
 
 // Creo La Funzione
-function sommaNumeri(N){
-   while (N > 0)
-    {
-        expo =  Math.pow(N,3);
-        console.log(expo);
-        arrayEsponenti.push(expo);
-        N -- ;
+function sommaNumeri(Num){
+    let sum =0;
+    for (let i = 0; i < Num.length; i++) {
+        sum += Num[i];
     }
+    console.log(sum);
 }
-alert(arrayEsponenti);

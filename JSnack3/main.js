@@ -7,5 +7,4 @@ for(let i = 0; i<10; i++)
     let numero = parseInt(prompt ("Inserisci un numero "));
     somma = somma+numero;
 }
-
 console.log("la somma è ", somma);
