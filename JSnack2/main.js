@@ -7,9 +7,8 @@ let parola2 = prompt ("Inserisci la seconda parola");
 
 if(parola1.length>parola2.length)
 {
-    console.log(parola2);
+    alert(parola1 + " è la parola più lunga");
 }else if(parola1.length<parola2.length)
 {
-    console.log(parola1);
+    alert(parola2 + " è la parola più lunga");
 }
-

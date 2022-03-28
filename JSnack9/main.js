@@ -6,36 +6,28 @@ calcolare la media dei 10 numeri che vanno chiesti all'utente attraverso
 dei prompt.*/
 
 let ArrayNumero = [];
-sommaNumeri(ArrayNumero);
 
-
-for (let i = 0; i < Num.length; i++) {
+for (let i = 0; i <10; i++) {
     let Numero = parseInt(prompt ("Inserisci il tuo numero"));
     ArrayNumero.push(Numero);
 }
 
+let media = mediaAritmetica(ArrayNumero);
+console.log(media);
+
 // Creo La Funzione Somma
-function sommaNumeri(Num){
+function sommaNumeri(array){
+
     let sum =0;
-    for (let i = 0; i < Num.length; i++) {
-        sum += Num[i];
+    for (let i = 0; i < array.length; i++) {
+        sum += array[i];
     }
-    console.log(sum);
     return sum;
 }
 //Funzione media aritmetica
-function mediaAritmetica()
+function mediaAritmetica(array2)
 {
-    let media = sum/10
-}
-/*const Numero = [5,5,5,5,6,5,5,5,5,5];
-sommaNumeri(Numero);*/
-
-// Creo La Funzione
-function sommaNumeri(Num){
-    let sum =0;
-    for (let i = 0; i < Num.length; i++) {
-        sum += Num[i];
-    }
-    console.log(sum);
+    let somma = sommaNumeri(array2);
+    let mediaInt = somma/10
+    return mediaInt;
 }
